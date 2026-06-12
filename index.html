@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos, Condiciones y Política de Privacidad — Mirá Qué Lindo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #fce7f3;
+      --brand-light: #fce7f3;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --danger: #dc2626;
+      --radius: 8px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      padding: 0;
+      margin: 0;
+    }
+
+    /* HEADER */
+    .site-header {
+      background: var(--brand);
+      color: #831843;
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+    .site-header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .site-header p {
+      font-size: 0.875rem;
+      opacity: 0.85;
+    }
+
+    /* NAV TABS */
+    .nav-tabs {
+      display: flex;
+      border-bottom: 2px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-tab {
+      flex: 1;
+      padding: 14px 12px;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      border: none;
+      background: none;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .nav-tab.active {
+      color: #831843;
+      border-bottom-color: #831843;
+    }
+    .nav-tab:hover:not(.active) {
+      color: var(--text);
+    }
+
+    /* SECTIONS */
+    .doc-section {
+      display: none;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+    .doc-section.active { display: block; }
+
+    /* NOTICE BOX */
+    .notice {
+      background: #FEF3C7;
+      border-left: 4px solid #F59E0B;
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin-bottom: 32px;
+      font-size: 0.875rem;
+      color: #92400E;
+    }
+    .notice strong { display: block; margin-bottom: 4px; }
+
+    /* DOC META */
+    .doc-meta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .doc-meta span { display: block; margin-bottom: 2px; }
+
+    /* TYPOGRAPHY */
+    h2.section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #831843;
+      margin: 40px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand);
+    }
+    h2.section-title:first-of-type { margin-top: 0; }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 24px 0 10px;
+    }
+
+    p { margin-bottom: 14px; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+    li { margin-bottom: 6px; }
+
+    strong { font-weight: 600; }
+
+    em { font-style: italic; color: var(--muted); }
+
+    a { color: #9d174d; text-decoration: underline; }
+
+    /* ALERT BOX (información relevante) */
+    .alert-box {
+      background: #FEF2F2;
+      border: 1px solid #FECACA;
+      border-left: 4px solid var(--danger);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 28px;
+    }
+    .alert-box p { margin-bottom: 6px; color: #7f1d1d; font-size: 0.9rem; }
+    .alert-box p:last-child { margin-bottom: 0; }
+
+    /* CONTACT CARD */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .contact-card p { margin-bottom: 6px; font-size: 0.9rem; }
+    .contact-card p:last-child { margin-bottom: 0; }
+
+    /* FOOTER */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 20px 24px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      .site-header h1 { font-size: 1.3rem; }
+      .doc-section { padding: 24px 16px 48px; }
+      .nav-tab { font-size: 0.8rem; padding: 12px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Mirá Qué Lindo (MQL)</h1>
+  <p>Plataforma de Gestión de Créditos Personales</p>
+</header>
+
+<nav class="nav-tabs" role="tablist">
+  <button class="nav-tab active" role="tab" onclick="showTab('tyc', this)">Términos y Condiciones</button>
+  <button class="nav-tab" role="tab" onclick="showTab('privacidad', this)">Política de Privacidad</button>
+</nav>
+
+<!-- ===================== TÉRMINOS Y CONDICIONES ===================== -->
+<section id="tab-tyc" class="doc-section active" role="tabpanel">
+
+  <div class="doc-meta">
+    <span><strong>Versión:</strong> 1.0</span>
+    <span><strong>Fecha de vigencia:</strong> 01/04/2026</span>
+    <span><strong>Empresa:</strong> Nazarena Edith Ferrari — CUIT 27-36779617-6</span>
+  </div>
+
+  <div class="alert-box">
+    <p>⚠️ <strong>Información relevante antes de continuar:</strong></p>
+    <p>• Tu deuda <strong>no se cancela</strong> si desinstalás la aplicación.</p>
+    <p>• Los pagos realizados pueden demorar hasta <strong>72 horas</strong> en asentarse en el sistema.</p>
+    <p>• Todos los datos están protegidos por la <strong>Ley de Protección de Datos Personales N° 25.326</strong>.</p>
+  </div>
+
+  <h2 class="section-title">Artículo 1 — Aceptación de los términos</h2>
+  <p>Los presentes Términos y Condiciones (en adelante "los Términos") regulan el acceso y uso de la aplicación móvil "Mirá Qué Lindo" (MQL), desarrollada y operada por <strong>Nazarena Edith Ferrari</strong>, CUIT 27-36779617-6, con domicilio legal en Saenz Peña 419, Brandsen, Buenos Aires (en adelante "la Empresa").</p>
+  <p>Al descargar, instalar o utilizar la aplicación, el usuario declara haber leído, comprendido y aceptado íntegramente estos Términos y la Política de Privacidad de MQL, los cuales forman parte integral del contrato de crédito celebrado entre las partes.</p>
+  <p>Si no está de acuerdo con alguna de las disposiciones aquí establecidas, deberá abstenerse de utilizar la aplicación.</p>
+
+  <h2 class="section-title">Artículo 2 — Descripción del servicio</h2>
+  <p>MQL es una plataforma de gestión de créditos personales que facilita la administración, seguimiento y pago de créditos e instalaciones otorgados por la Empresa a sus clientes. A través de la aplicación, los usuarios pueden:</p>
+  <ul>
+    <li>Consultar el estado de su crédito y el historial de pagos</li>
+    <li>Visualizar el detalle de cuotas (monto, vencimiento, estado)</li>
+    <li>Realizar el pago de cuotas a través de MercadoPago</li>
+    <li>Recibir notificaciones sobre vencimientos y confirmaciones de pago</li>
+    <li>Actualizar datos de contacto y comunicarse con la Empresa</li>
+  </ul>
+  <p>La Empresa se reserva el derecho de ampliar, modificar o discontinuar funcionalidades de la aplicación en cualquier momento, con o sin previo aviso, sin que ello genere derecho a reclamo alguno por parte del usuario.</p>
+
+  <h2 class="section-title">Artículo 3 — Tipos de usuarios y acceso</h2>
+  <h3>3.1. Clientes (deudores)</h3>
+  <p>Son las personas físicas que han suscripto un contrato de crédito con la Empresa. El acceso a la aplicación se realiza mediante el DNI y una contraseña personal. Solo podrán visualizar y gestionar la información correspondiente a su propio crédito.</p>
+
+  <h3>3.2. Administradores</h3>
+  <p>Son los empleados o representantes autorizados de la Empresa, quienes acceden mediante correo electrónico institucional y contraseña. Los administradores pueden visualizar la información de todos los clientes, gestionar créditos y configurar el sistema. Sus acciones quedan registradas en el sistema a efectos de auditoría.</p>
+
+  <h3>3.3. Requisitos de acceso</h3>
+  <ul>
+    <li>Ser mayor de 18 años con capacidad legal para contratar</li>
+    <li>Tener un crédito activo otorgado por la Empresa (para clientes)</li>
+    <li>Proporcionar información veraz y mantenerla actualizada</li>
+    <li>Disponer de un dispositivo Android compatible con la versión vigente de la app</li>
+  </ul>
+
+  <h2 class="section-title">Artículo 4 — Obligaciones del usuario</h2>
+  <p>Al utilizar MQL, el usuario se compromete a:</p>
+  <ul>
+    <li>Proporcionar información veraz, completa y actualizada al momento del registro</li>
+    <li>Mantener la confidencialidad de sus credenciales de acceso (DNI/email y contraseña)</li>
+    <li>No compartir su cuenta ni sus credenciales con terceros</li>
+    <li>Notificar de inmediato a la Empresa ante cualquier uso no autorizado de su cuenta</li>
+    <li>Utilizar la aplicación exclusivamente para los fines previstos en estos Términos</li>
+    <li>No intentar acceder a información de otros usuarios o a áreas restringidas del sistema</li>
+    <li>No realizar acciones que puedan comprometer la seguridad o integridad de la plataforma</li>
+    <li>Denunciar un domicilio electrónico a fin de tenerse todas las notificaciones como válidas, siendo responsables en el uso y recepción de las comunicaciones</li>
+  </ul>
+  <p>El usuario es el único responsable por el uso que haga de sus credenciales. La Empresa no responderá por daños ocasionados por el uso indebido o no autorizado de una cuenta.</p>
+
+  <h2 class="section-title">Artículo 5 — Proceso de pagos y uso de MercadoPago</h2>
+  <h3>5.1. Procesamiento de pagos</h3>
+  <p>Los pagos de cuotas realizados a través de MQL son procesados por <strong>MercadoPago (Mercado Libre S.R.L.)</strong>, una plataforma de pagos electrónicos independiente. Al realizar un pago, el usuario acepta los términos y condiciones de MercadoPago, disponibles en <a href="https://www.mercadopago.com.ar" target="_blank" rel="noopener">www.mercadopago.com.ar</a>.</p>
+
+  <h3>5.2. Acreditación de pagos</h3>
+  <p>Los pagos se acreditarán en la cuenta del cliente una vez que MercadoPago confirme la transacción, lo cual puede demorar hasta <strong>72 horas hábiles</strong> según el medio de pago utilizado. La Empresa no es responsable por demoras atribuibles a MercadoPago o a las entidades financieras intervinientes.</p>
+
+  <h3>5.3. Comprobantes de pago</h3>
+  <p>MercadoPago emitirá un comprobante electrónico por cada transacción exitosa. Adicionalmente, la aplicación reflejará el pago una vez confirmada la transacción. Se recomienda conservar los comprobantes emitidos por MercadoPago.</p>
+
+  <h3>5.4. Errores y contracargos</h3>
+  <p>En caso de cobros duplicados, errores en el monto o contracargos, el usuario deberá contactar a <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a> dentro de los 10 días hábiles de detectado el error, adjuntando el comprobante correspondiente.</p>
+
+  <h2 class="section-title">Artículo 6 — Mora, punitorios y consecuencias del incumplimiento</h2>
+  <h3>6.1. Mora automática</h3>
+  <p>El incumplimiento en el pago de cualquier cuota a su fecha de vencimiento producirá la mora del deudor de pleno derecho, sin necesidad de interpelación judicial ni extrajudicial previa, conforme lo establecido en el contrato de crédito suscripto.</p>
+
+  <h3>6.2. Intereses por mora y punitorios</h3>
+  <p>A partir del primer día de mora, se devengarán los intereses y/o punitorios establecidos en el contrato de crédito individual. Estos cargos se verán reflejados en la aplicación y se acumularán diariamente hasta la cancelación total de la deuda.</p>
+
+  <h3>6.3. Consecuencias del incumplimiento</h3>
+  <p>El incumplimiento reiterado o significativo en el pago de cuotas podrá dar lugar a:</p>
+  <ul>
+    <li>Suspensión temporal del acceso a ciertas funcionalidades de la aplicación</li>
+    <li>Inicio de gestiones de cobranza extrajudicial, pudiendo contactarse al deudor y/o a su referencia personal</li>
+    <li>Reporte de la deuda ante sistemas de información crediticia conforme a la legislación vigente</li>
+    <li>Inicio de acciones judiciales de cobro con los gastos y honorarios a cargo del deudor incumplidor</li>
+    <li>Declaración de caducidad de plazos y exigibilidad anticipada del saldo total de la deuda</li>
+  </ul>
+
+  <h3>6.4. Planes de regularización</h3>
+  <p>La Empresa podrá, a su exclusivo criterio, ofrecer planes de pago o refinanciamiento para deudas en mora. Dichos acuerdos deberán ser formalizados por escrito y no implican renuncia a los derechos de la Empresa respecto de períodos anteriores.</p>
+
+  <h2 class="section-title">Artículo 7 — Suspensión y baja de cuenta</h2>
+  <h3>7.1. Suspensión por la Empresa</h3>
+  <p>La Empresa podrá suspender o dar de baja una cuenta en los siguientes casos:</p>
+  <ul>
+    <li>Incumplimiento de los presentes Términos y Condiciones</li>
+    <li>Uso fraudulento o malintencionado de la aplicación</li>
+    <li>Proporción de información falsa o engañosa</li>
+    <li>Falta de pago reiterada o significativa</li>
+    <li>Por orden judicial o requerimiento de autoridad competente</li>
+  </ul>
+
+  <h3>7.2. Baja a solicitud del usuario</h3>
+  <p>El usuario-cliente podrá solicitar la baja de su cuenta enviando una solicitud a <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a>. Sin embargo, la baja de la cuenta no extingue las obligaciones crediticias pendientes, las cuales subsistirán hasta su total cancelación. Los datos necesarios para el cumplimiento de dichas obligaciones serán conservados conforme a los plazos indicados en la Política de Privacidad.</p>
+
+  <h3>7.3. Efectos de la suspensión o baja</h3>
+  <p>La suspensión o baja no libera al usuario de las deudas pendientes ni afecta las acciones que la Empresa pudiera iniciar para el cobro de los créditos vigentes.</p>
+
+  <h2 class="section-title">Artículo 8 — Limitación de responsabilidad</h2>
+  <p>La Empresa no será responsable por:</p>
+  <ul>
+    <li>Interrupciones, fallas técnicas o indisponibilidad temporal de la aplicación por causas ajenas a su control (fallas de conectividad, mantenimiento, causas de fuerza mayor)</li>
+    <li>Errores o demoras en la acreditación de pagos atribuibles a MercadoPago o entidades financieras</li>
+    <li>Daños derivados del uso indebido de las credenciales de acceso por parte del usuario o terceros</li>
+    <li>Pérdida de datos causada por actos del propio usuario, fallas del dispositivo o desinstalación de la app</li>
+    <li>Decisiones económicas o financieras tomadas por el usuario en base a la información provista por la aplicación</li>
+  </ul>
+  <p>En ningún caso la responsabilidad total de la Empresa frente al usuario superará el monto de las cuotas efectivamente abonadas por el usuario en los 3 meses anteriores al evento que originó el reclamo. MQL es un canal de gestión y no es el proveedor del servicio de internet o de hardware.</p>
+
+  <h2 class="section-title">Artículo 9 — Propiedad intelectual</h2>
+  <p>Todos los elementos de la aplicación MQL, incluyendo pero no limitándose a su código fuente, diseño, logotipos, textos, funcionalidades e interfaces, son propiedad exclusiva de la Empresa o de sus licenciantes y están protegidos por las leyes de propiedad intelectual de la República Argentina. El usuario no adquiere ningún derecho de propiedad intelectual por el uso de la aplicación.</p>
+
+  <h2 class="section-title">Artículo 10 — Modificaciones a los términos</h2>
+  <p>La Empresa se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Los cambios serán comunicados mediante notificación en la aplicación y/o por correo electrónico, con al menos 10 días de anticipación a su entrada en vigencia.</p>
+  <p>Si el usuario no está de acuerdo con las modificaciones, deberá comunicarlo a <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a> antes de la fecha de vigencia. La continuación en el uso de la aplicación tras esa fecha implicará la aceptación de los nuevos Términos.</p>
+
+  <h2 class="section-title">Artículo 11 — Ley aplicable y jurisdicción</h2>
+  <p>Los presentes Términos y Condiciones se rigen exclusivamente por la ley de la República Argentina, en particular por el Código Civil y Comercial de la Nación, la Ley 24.240 de Defensa del Consumidor y sus modificatorias, y demás normativa aplicable.</p>
+  <p>Para la resolución de cualquier controversia, las partes se someten a la jurisdicción de los Tribunales Ordinarios de la ciudad de La Plata, Buenos Aires, con expresa renuncia a cualquier otro fuero que pudiere corresponder.</p>
+
+  <h2 class="section-title">Artículo 12 — Disposiciones generales</h2>
+  <ul>
+    <li>Si alguna disposición de estos Términos fuera declarada inválida o inaplicable, las restantes disposiciones mantendrán su plena vigencia.</li>
+    <li>La tolerancia de la Empresa ante incumplimientos del usuario no implicará renuncia a sus derechos ni creará precedente aplicable a situaciones futuras.</li>
+    <li>Estos Términos constituyen el acuerdo completo entre las partes respecto al uso de la aplicación, reemplazando cualquier acuerdo anterior sobre la misma materia.</li>
+    <li>En caso de discrepancia entre estos Términos y el contrato de crédito individual suscripto, prevalecerán las disposiciones del contrato de crédito.</li>
+  </ul>
+
+  <h2 class="section-title">Artículo 13 — Contacto</h2>
+  <p>Para consultas, reclamos o ejercicio de derechos:</p>
+  <div class="contact-card">
+    <p><strong>Empresa:</strong> Nazarena Edith Ferrari</p>
+    <p><strong>CUIT:</strong> 27-36779617-6</p>
+    <p><strong>Domicilio:</strong> Saenz Peña 419, Brandsen, Buenos Aires</p>
+    <p><strong>Email:</strong> <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a></p>
+    <p><strong>Fecha de vigencia:</strong> 01/04/2026</p>
+  </div>
+
+</section>
+
+<!-- ===================== POLÍTICA DE PRIVACIDAD ===================== -->
+<section id="tab-privacidad" class="doc-section" role="tabpanel">
+
+  <div class="doc-meta">
+    <span><strong>Versión:</strong> 1.0</span>
+    <span><strong>Fecha de vigencia:</strong> 01/04/2026</span>
+    <span>Preparada conforme a la Ley 25.326 y requisitos de Google Play Store</span>
+  </div>
+
+  <h2 class="section-title">1. Introducción y responsable del tratamiento</h2>
+  <p><strong>Nazarena Edith Ferrari</strong> (en adelante "la Empresa"), con CUIT 27-36779617-6 y domicilio legal en Saenz Peña 419, Brandsen, Buenos Aires, es la titular y responsable del tratamiento de los datos personales recolectados a través de la aplicación móvil "Mirá Qué Lindo" (MQL), disponible en Google Play Store para dispositivos Android.</p>
+  <p>La presente Política de Privacidad describe qué datos personales recolectamos, cómo los utilizamos, con quién los compartimos, cuánto tiempo los conservamos y cuáles son sus derechos como titular de esos datos.</p>
+  <p>Esta política ha sido redactada en cumplimiento de la <strong>Ley N.° 25.326 de Protección de Datos Personales</strong> de la República Argentina y los requisitos de Google Play Store para aplicaciones del sector financiero y crediticio.</p>
+  <p><em>Consultas: <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a></em></p>
+
+  <h2 class="section-title">2. Datos personales que recolectamos</h2>
+  <h3>2.1. Datos de identificación personal</h3>
+  <ul>
+    <li>Nombre y apellido completo</li>
+    <li>Número de Documento Nacional de Identidad (DNI)</li>
+    <li>Dirección de correo electrónico</li>
+    <li>Número de teléfono/celular</li>
+  </ul>
+
+  <h3>2.2. Datos de domicilio</h3>
+  <ul>
+    <li>Calle y número</li>
+    <li>Entre calles de referencia</li>
+    <li>Código postal</li>
+    <li>Localidad y partido/municipio</li>
+  </ul>
+
+  <h3>2.3. Datos de referencia personal</h3>
+  <ul>
+    <li>Nombre y apellido de una persona de contacto de referencia</li>
+    <li>Número de teléfono del contacto de referencia</li>
+  </ul>
+  <p><em>Estos datos se recopilan exclusivamente como información de contacto alternativo y no son utilizados para fines comerciales ni publicitarios.</em></p>
+
+  <h3>2.4. Datos financieros y crediticios</h3>
+  <ul>
+    <li>Historial de cuotas (pagadas, pendientes, vencidas)</li>
+    <li>Montos del crédito e instalaciones</li>
+    <li>Fechas de vencimiento de cada cuota</li>
+    <li>Intereses por mora y punitorios aplicados</li>
+    <li>Estado general de la deuda</li>
+  </ul>
+
+  <h3>2.5. Datos técnicos del dispositivo</h3>
+  <ul>
+    <li>Token del dispositivo (generado por Firebase/Expo, utilizado para notificaciones push)</li>
+    <li>Identificador único del dispositivo generado internamente por la aplicación</li>
+  </ul>
+  <p><em>No recolectamos datos sensibles, datos de localización geográfica, acceso a galería de fotos, lista de contactos, cámara ni ningún otro permiso de dispositivo más allá de las notificaciones push.</em></p>
+
+  <h2 class="section-title">3. Finalidad y base legal del tratamiento</h2>
+  <h3>3.1. Finalidades del tratamiento</h3>
+  <p>Sus datos personales son tratados para los siguientes fines específicos:</p>
+  <ul>
+    <li>Verificar la identidad del usuario y habilitar el acceso seguro a la aplicación</li>
+    <li>Gestionar el crédito otorgado: cuotas, vencimientos, pagos y estados de cuenta</li>
+    <li>Procesar pagos a través de la plataforma MercadoPago</li>
+    <li>Enviar notificaciones push sobre vencimientos, confirmaciones de pago y avisos importantes</li>
+    <li>Contactar al usuario o a su referencia ante situaciones de mora o irregularidades</li>
+    <li>Cumplir con obligaciones legales y regulatorias aplicables</li>
+    <li>Mantener la seguridad e integridad del sistema</li>
+  </ul>
+
+  <h3>3.2. Base legal</h3>
+  <p>El tratamiento de sus datos personales se sustenta en: (a) la ejecución del contrato de crédito celebrado entre usted y la Empresa; (b) el cumplimiento de obligaciones legales; y (c) el consentimiento otorgado al aceptar esta política al momento del registro en la aplicación, conforme al artículo 5 de la Ley 25.326.</p>
+
+  <h2 class="section-title">4. Transferencia de datos a terceros</h2>
+  <p>La Empresa no cede, vende, alquila ni comercializa sus datos personales a terceros. Sin embargo, para brindar los servicios de la aplicación, compartimos información con los siguientes proveedores de tecnología, quienes actúan como encargados del tratamiento:</p>
+
+  <h3>MercadoPago (Mercado Libre S.R.L.)</h3>
+  <p>Procesamos los pagos de cuotas a través de MercadoPago. Al realizar un pago, los datos necesarios para completar la transacción son transmitidos a esta plataforma bajo sus propias políticas de privacidad y seguridad. Consulte la política de privacidad de MercadoPago en <a href="https://www.mercadopago.com.ar" target="_blank" rel="noopener">www.mercadopago.com.ar</a>.</p>
+
+  <h3>Google Firebase (Google LLC)</h3>
+  <p>Utilizamos Firebase para la distribución de la aplicación, actualizaciones y el envío de notificaciones push. Firebase procesa el token de su dispositivo con el único fin de entregar notificaciones. Google actúa como encargado del tratamiento bajo el Acuerdo de Procesamiento de Datos de Google.</p>
+
+  <h3>Expo Notifications</h3>
+  <p>Utilizamos el servicio Expo Notifications como capa intermediaria para la gestión y envío de notificaciones push a los dispositivos de los usuarios.</p>
+
+  <h3>Railway (Railway Corp.)</h3>
+  <p>El backend y la base de datos de la aplicación están alojados en la infraestructura de Railway, un proveedor de hosting en la nube. Sus datos son almacenados en servidores seguros bajo condiciones de confidencialidad.</p>
+
+  <p><em>Todos los terceros mencionados han asumido compromisos contractuales de confidencialidad y seguridad respecto de los datos que procesan en nombre de la Empresa.</em></p>
+
+  <h2 class="section-title">5. Tiempo de retención de los datos</h2>
+  <p>Conservamos sus datos personales durante los siguientes períodos:</p>
+  <ul>
+    <li><strong>Datos del contrato de crédito y financieros:</strong> durante la vigencia del crédito y por un mínimo de 10 años adicionales una vez cancelado, conforme a los plazos de prescripción de acciones civiles y obligaciones contables vigentes en Argentina.</li>
+    <li><strong>Datos de identificación y contacto:</strong> durante la relación contractual y hasta 5 años posteriores a la extinción del vínculo.</li>
+    <li><strong>Token del dispositivo e ID técnico:</strong> mientras el usuario mantenga la aplicación instalada y habilitadas las notificaciones. Se elimina al desinstalar la app o revocar el permiso.</li>
+    <li><strong>Datos de la persona de referencia:</strong> durante la vigencia del crédito y hasta su cancelación.</li>
+  </ul>
+  <p>Una vez vencidos los plazos de retención, los datos serán eliminados o anonimizados de manera segura, salvo que exista obligación legal de conservarlos por un período mayor.</p>
+
+  <h2 class="section-title">6. Derechos del titular de los datos</h2>
+  <p>En virtud del artículo 14 de la Ley 25.326 y concordantes, usted tiene los siguientes derechos sobre sus datos personales:</p>
+  <ul>
+    <li><strong>Derecho de acceso:</strong> solicitar información sobre qué datos personales suyos están siendo tratados, su origen, destinatarios y finalidad.</li>
+    <li><strong>Derecho de rectificación:</strong> requerir la corrección de datos inexactos, incompletos o desactualizados.</li>
+    <li><strong>Derecho de supresión:</strong> solicitar la eliminación de sus datos cuando hayan dejado de ser necesarios para los fines que motivaron su recolección, sujeto a las excepciones legales.</li>
+    <li><strong>Derecho de confidencialidad:</strong> exigir que sus datos no sean cedidos a terceros en violación de la ley.</li>
+  </ul>
+  <p>Para ejercer cualquiera de estos derechos, envíe una solicitud escrita a <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a>, indicando su nombre completo, DNI y el derecho que desea ejercer. Responderemos su solicitud dentro de los 5 días hábiles de recibida.</p>
+  <p>Le informamos que la <strong>Dirección Nacional de Protección de Datos Personales</strong> (Agencia de Acceso a la Información Pública) es el órgano de control de la Ley 25.326 y tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de dicha norma.</p>
+
+  <h2 class="section-title">7. Seguridad de la información</h2>
+  <p>La Empresa implementa medidas técnicas y organizativas razonables para proteger sus datos personales contra accesos no autorizados, alteraciones, divulgaciones o destrucción. Entre las medidas adoptadas se incluyen:</p>
+  <ul>
+    <li>Autenticación mediante DNI o email más contraseña, protegida con hashing seguro</li>
+    <li>Tokens de sesión JWT con mecanismo de refresh token y expiración automática</li>
+    <li>Comunicaciones cifradas mediante protocolo HTTPS/TLS entre la app y el servidor</li>
+    <li>Almacenamiento seguro de datos en infraestructura con acceso restringido (Railway)</li>
+    <li>Acceso a datos restringido por roles: los usuarios solo acceden a su propia información</li>
+    <li>Monitoreo de accesos y registros de actividad del sistema</li>
+  </ul>
+  <p>No obstante lo anterior, ningún sistema de transmisión o almacenamiento de datos puede garantizar seguridad absoluta. En caso de detectar una brecha de seguridad que afecte sus derechos, la notificaremos conforme a la normativa aplicable.</p>
+
+  <h2 class="section-title">8. Notificaciones push</h2>
+  <p>Con su consentimiento expreso, la aplicación podrá enviarle notificaciones push para informarle sobre vencimientos de cuotas, confirmaciones de pago, estados de su crédito y comunicaciones importantes del servicio.</p>
+  <p>Puede revocar este consentimiento en cualquier momento desde la configuración de su dispositivo Android: <em>Ajustes → Aplicaciones → Mirá Qué Lindo → Notificaciones</em>. La revocación no afecta la validez de los tratamientos realizados con anterioridad.</p>
+
+  <h2 class="section-title">9. Menores de edad</h2>
+  <p>MQL está destinada exclusivamente a personas mayores de 18 años con capacidad legal para contraer obligaciones en la República Argentina. No recolectamos intencionalmente datos personales de menores de edad. Si detectamos que hemos recopilado información de un menor, procederemos a eliminarla de inmediato.</p>
+
+  <h2 class="section-title">10. Modificaciones a esta política</h2>
+  <p>Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Cuando realicemos cambios materiales, lo notificaremos mediante notificación push y/o email, con al menos 10 días de anticipación a la entrada en vigencia de los cambios. El uso continuado de la aplicación tras esa fecha implica la aceptación de la política actualizada.</p>
+
+  <h2 class="section-title">11. Contacto y datos del responsable</h2>
+  <div class="contact-card">
+    <p><strong>Empresa responsable:</strong> Nazarena Edith Ferrari</p>
+    <p><strong>CUIT:</strong> 27-36779617-6</p>
+    <p><strong>Domicilio legal:</strong> Saenz Peña 419, Brandsen, Buenos Aires</p>
+    <p><strong>Email:</strong> <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a></p>
+    <p><strong>Fecha de vigencia:</strong> 01/04/2026</p>
+  </div>
+
+</section>
+
+<footer class="site-footer">
+  <p>Mirá Qué Lindo &nbsp;|&nbsp; <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a> &nbsp;|&nbsp; Brandsen, Buenos Aires</p>
+</footer>
+
+<script>
+  function showTab(name, btn) {
+    document.querySelectorAll('.doc-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
