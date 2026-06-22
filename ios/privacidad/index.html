@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Mirá Qué Lindo (iOS)</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #fce7f3;
+      --brand-dark: #831843;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --danger: #dc2626;
+      --radius: 8px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .site-header {
+      background: var(--brand);
+      color: var(--brand-dark);
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+    .site-header h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; }
+    .site-header p { font-size: 0.875rem; opacity: 0.85; }
+    .platform-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      color: var(--brand-dark);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-top: 10px;
+      border: 1px solid #f9a8d4;
+    }
+
+    .nav-tabs {
+      display: flex;
+      border-bottom: 2px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-tab {
+      flex: 1;
+      padding: 14px 12px;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .nav-tab.active { color: var(--brand-dark); border-bottom-color: var(--brand-dark); }
+    .nav-tab:hover:not(.active) { color: var(--text); }
+
+    .doc-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+
+    .doc-meta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .doc-meta span { display: block; margin-bottom: 2px; }
+
+    h2.section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin: 36px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand);
+    }
+    h2.section-title:first-of-type { margin-top: 0; }
+    h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 8px; }
+    p { margin-bottom: 14px; }
+    ul, ol { padding-left: 22px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; }
+    strong { font-weight: 600; }
+    em { font-style: italic; color: var(--muted); }
+    a { color: #9d174d; text-decoration: underline; }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 28px;
+      font-size: 0.9rem;
+    }
+    .info-table td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .info-table td:first-child {
+      font-weight: 600;
+      background: var(--surface);
+      width: 38%;
+      white-space: nowrap;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .contact-card p { margin-bottom: 6px; font-size: 0.9rem; }
+    .contact-card p:last-child { margin-bottom: 0; }
+
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 20px 24px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .site-footer a { color: var(--brand-dark); }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Mirá Qué Lindo (MQL)</h1>
+  <p>Plataforma de Gestión de Créditos Personales</p>
+  <span class="platform-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+    iOS / App Store
+  </span>
+</header>
+
+<nav class="nav-tabs">
+  <a class="nav-tab" href="/ios/terminos">Términos y Condiciones</a>
+  <a class="nav-tab active" href="/ios/privacidad">Política de Privacidad</a>
+</nav>
+
+<section class="doc-section">
+
+  <div class="doc-meta">
+    <span><strong>Versión:</strong> 1.1</span>
+    <span><strong>Fecha de vigencia:</strong> 17 de junio de 2026</span>
+    <span><strong>Plataforma:</strong> iOS / App Store (iPhone) | Cumplimiento: Ley 25.326 — App Store Review Guidelines</span>
+  </div>
+
+  <h2 class="section-title">1. Introducción y Responsable del Tratamiento</h2>
+  <p><strong>Nazarena Edith Ferrari</strong> (en adelante "la Empresa", "nosotros" o "nos"), con CUIT 27-36779617-6 y domicilio legal en Saenz Peña 419, Brandsen, Buenos Aires, es la titular y responsable del tratamiento de los datos personales recolectados a través de la aplicación móvil "Mirá Qué Lindo" (MQL), disponible en <strong>App Store para dispositivos iPhone (iOS)</strong>.</p>
+  <p>La presente Política de Privacidad describe qué datos personales recolectamos, cómo los utilizamos, con quién los compartimos, cuánto tiempo los conservamos y cuáles son sus derechos como titular de esos datos.</p>
+  <p>Esta política ha sido redactada en cumplimiento de la <strong>Ley N.° 25.326 de Protección de Datos Personales</strong> de la República Argentina y los requisitos establecidos por <strong>App Store (Apple Inc.)</strong> para aplicaciones del sector financiero y crediticio (Directriz 5.1.1 de las App Store Review Guidelines).</p>
+  <p><em>Consultas: <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a></em></p>
+
+  <h2 class="section-title">2. Datos Personales que Recolectamos</h2>
+  <h3>2.1. Datos de identificación personal</h3>
+  <ul>
+    <li>Nombre y apellido completo</li>
+    <li>Número de Documento Nacional de Identidad (DNI)</li>
+    <li>Dirección de correo electrónico</li>
+    <li>Número de teléfono/celular</li>
+  </ul>
+  <h3>2.2. Datos de domicilio</h3>
+  <ul>
+    <li>Calle y número</li>
+    <li>Entre calles de referencia</li>
+    <li>Código postal</li>
+    <li>Localidad y partido/municipio</li>
+  </ul>
+  <h3>2.3. Datos de referencia personal</h3>
+  <ul>
+    <li>Nombre y apellido de una persona de contacto de referencia</li>
+    <li>Número de teléfono del contacto de referencia</li>
+  </ul>
+  <p><em>Estos datos se recopilan exclusivamente como información de contacto alternativo y no son utilizados para fines comerciales ni publicitarios.</em></p>
+  <h3>2.4. Datos financieros y crediticios</h3>
+  <ul>
+    <li>Historial de cuotas (pagadas, pendientes, vencidas)</li>
+    <li>Montos del crédito e instalaciones</li>
+    <li>Fechas de vencimiento de cada cuota</li>
+    <li>Intereses por mora y punitorios aplicados</li>
+    <li>Estado general de la deuda</li>
+  </ul>
+  <h3>2.5. Datos técnicos del dispositivo</h3>
+  <ul>
+    <li>Token del dispositivo (generado por APNs/Firebase/Expo, utilizado exclusivamente para notificaciones push)</li>
+    <li>Identificador único de instalación generado internamente por la aplicación</li>
+    <li>Identificador de Proveedor (IDFV) generado por iOS: utilizado exclusivamente para seguridad de sesión y prevención de fraude. <strong>No se utiliza para publicidad ni para rastreo cruzado (cross-app tracking).</strong></li>
+  </ul>
+  <p><em>No recolectamos datos sensibles, datos de localización geográfica, acceso a galería de fotos, lista de contactos, cámara ni ningún otro permiso de dispositivo más allá de las notificaciones push.</em></p>
+
+  <h2 class="section-title">3. Finalidad y Base Legal del Tratamiento</h2>
+  <h3>3.1. Finalidades del tratamiento</h3>
+  <ul>
+    <li>Verificar la identidad del usuario y habilitar el acceso seguro a la aplicación</li>
+    <li>Gestionar el crédito otorgado: cuotas, vencimientos, pagos y estados de cuenta</li>
+    <li>Procesar pagos a través de la plataforma MercadoPago</li>
+    <li>Enviar notificaciones push sobre vencimientos, confirmaciones de pago y avisos importantes del servicio</li>
+    <li>Contactar al usuario o a su referencia ante situaciones de mora o irregularidades</li>
+    <li>Cumplir con obligaciones legales y regulatorias aplicables</li>
+    <li>Mantener la seguridad e integridad del sistema</li>
+  </ul>
+  <h3>3.2. Base legal</h3>
+  <p>El tratamiento de sus datos personales se sustenta en: (a) la ejecución del contrato de crédito celebrado entre usted y la Empresa; (b) el cumplimiento de obligaciones legales; y (c) el consentimiento otorgado al aceptar esta política al momento del registro en la aplicación, conforme al artículo 5 de la Ley 25.326.</p>
+
+  <h2 class="section-title">4. Transferencia de Datos a Terceros</h2>
+  <p>La Empresa no cede, vende, alquila ni comercializa sus datos personales a terceros. Para brindar los servicios de la aplicación, compartimos información con los siguientes proveedores de tecnología:</p>
+
+  <table class="info-table">
+    <tr>
+      <td><strong>MercadoPago</strong><br><em>(Mercado Libre S.R.L.)</em></td>
+      <td>Procesamos los pagos de cuotas a través de MercadoPago. Los datos necesarios para completar la transacción son transmitidos a esta plataforma bajo sus propias políticas de privacidad. Consulte: <a href="https://www.mercadopago.com.ar" target="_blank" rel="noopener">www.mercadopago.com.ar</a></td>
+    </tr>
+    <tr>
+      <td><strong>Google Firebase</strong><br><em>(Google LLC)</em></td>
+      <td>Utilizado para notificaciones push. Firebase procesa el token del dispositivo con el único fin de entregar notificaciones transaccionales. Google actúa como encargado bajo su Acuerdo de Procesamiento de Datos. Los payloads de notificación nunca contienen datos personales explícitos ni números de cuenta.</td>
+    </tr>
+    <tr>
+      <td><strong>Expo Notifications</strong></td>
+      <td>Capa intermediaria para la gestión y envío de notificaciones push. Procesa tokens de dispositivo exclusivamente para el enrutamiento técnico de los mensajes.</td>
+    </tr>
+    <tr>
+      <td><strong>Railway</strong><br><em>(Railway Corp.)</em></td>
+      <td>El backend y la base de datos de la aplicación están alojados en la infraestructura de Railway. Sus datos son almacenados en servidores seguros bajo condiciones de confidencialidad.</td>
+    </tr>
+    <tr>
+      <td><strong>Apple Inc.</strong><br><em>(App Store / APNs)</em></td>
+      <td>La aplicación se distribuye a través de App Store. El servicio de notificaciones push de Apple (APNs) procesa el token del dispositivo exclusivamente para el enrutamiento técnico de los mensajes. Apple puede recopilar datos técnicos del dispositivo conforme a su propia política de privacidad disponible en <a href="https://www.apple.com/privacy" target="_blank" rel="noopener">www.apple.com/privacy</a>.</td>
+    </tr>
+  </table>
+  <p><em>Todos los terceros mencionados han asumido compromisos contractuales de confidencialidad y seguridad respecto de los datos que procesan en nombre de la Empresa.</em></p>
+
+  <h2 class="section-title">5. Tiempo de Retención de los Datos</h2>
+  <ul>
+    <li><strong>Datos del contrato de crédito y financieros:</strong> durante la vigencia del crédito y por un mínimo de 10 años adicionales una vez cancelado, conforme a los plazos de prescripción de acciones civiles y obligaciones contables vigentes en Argentina.</li>
+    <li><strong>Datos de identificación y contacto:</strong> durante la relación contractual y hasta 5 años posteriores a la extinción del vínculo.</li>
+    <li><strong>Token del dispositivo e ID técnico (APNs/Firebase/IDFV):</strong> mientras el usuario mantenga la aplicación instalada y habilitadas las notificaciones. Se elimina al desinstalar la app o revocar el permiso.</li>
+    <li><strong>Datos de la persona de referencia:</strong> durante la vigencia del crédito y hasta su cancelación.</li>
+  </ul>
+  <p>Una vez vencidos los plazos de retención, los datos serán eliminados o anonimizados de manera segura, salvo que exista obligación legal de conservarlos por un período mayor.</p>
+
+  <h2 class="section-title">6. Derechos del Titular de los Datos (Derechos ARCO)</h2>
+  <p>En virtud del artículo 14 de la Ley 25.326 y concordantes, usted tiene los siguientes derechos sobre sus datos personales:</p>
+  <ul>
+    <li><strong>Derecho de acceso:</strong> solicitar información sobre qué datos personales suyos están siendo tratados, su origen, destinatarios y finalidad.</li>
+    <li><strong>Derecho de rectificación:</strong> requerir la corrección de datos inexactos, incompletos o desactualizados.</li>
+    <li><strong>Derecho de supresión:</strong> solicitar la eliminación de sus datos cuando hayan dejado de ser necesarios para los fines que motivaron su recolección, sujeto a las excepciones legales.</li>
+    <li><strong>Derecho de confidencialidad:</strong> exigir que sus datos no sean cedidos a terceros en violación de la ley.</li>
+  </ul>
+  <p><strong>Plazos de respuesta:</strong> Solicitudes de acceso: 10 días corridos. Solicitudes de rectificación o supresión: 5 días hábiles.</p>
+  <p>Para ejercer cualquiera de estos derechos, envíe una solicitud escrita a <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a>, indicando su nombre completo, DNI y el derecho que desea ejercer.</p>
+  <p>La <strong>Dirección Nacional de Protección de Datos Personales</strong> (Agencia de Acceso a la Información Pública — AAIP) es el órgano de control de la Ley 25.326 y tiene atribución de atender denuncias y reclamos por incumplimiento.</p>
+
+  <h2 class="section-title">7. Registro de Base de Datos y Normativa Crediticia</h2>
+  <p>La base de datos de la Empresa se encuentra <strong>inscripta</strong> ante el Registro Nacional de Bases de Datos Personales de la AAIP, conforme lo exige el artículo 21 de la Ley N.° 25.326. Número de registro: <strong>RL-2026-58432515-APN-DNPDP#AAIP</strong>.</p>
+  <p>En cumplimiento del artículo 26 de la Ley N.° 25.326 (servicios de información crediticia): los registros de deudas canceladas solo serán informados de manera desfavorable por un plazo máximo de <strong>5 (cinco) años</strong> desde el vencimiento. Dicho plazo podrá reducirse a <strong>2 (dos) años</strong> a partir del pago efectivo de la obligación si el deudor lo solicita formalmente.</p>
+
+  <h2 class="section-title">8. Seguridad de la Información</h2>
+  <p>La Empresa implementa medidas técnicas y organizativas razonables para proteger sus datos personales:</p>
+  <ul>
+    <li>Autenticación mediante DNI o email más contraseña, protegida con hashing seguro</li>
+    <li>Tokens de sesión JWT con mecanismo de refresh token y expiración automática</li>
+    <li>Comunicaciones cifradas mediante protocolo HTTPS/TLS entre la app y el servidor</li>
+    <li>Almacenamiento seguro de datos en infraestructura con acceso restringido (Railway)</li>
+    <li>Acceso a datos restringido por roles: los usuarios solo acceden a su propia información</li>
+    <li>Monitoreo de accesos y registros de actividad del sistema</li>
+  </ul>
+  <p>No obstante, ningún sistema de transmisión o almacenamiento de datos puede garantizar seguridad absoluta. En caso de detectar una brecha de seguridad que afecte sus derechos, la notificaremos conforme a la normativa aplicable.</p>
+
+  <h2 class="section-title">9. Notificaciones Push</h2>
+  <p>Con su consentimiento expreso, la aplicación podrá enviarle notificaciones push para informarle sobre vencimientos de cuotas, confirmaciones de pago, estados de su crédito y comunicaciones importantes del servicio.</p>
+  <p>La aplicación utiliza la infraestructura de Google Firebase (FCM) y el servicio de notificaciones de Apple (APNs) para el procesamiento y transmisión técnica de las notificaciones. Los payloads de notificación <strong>nunca contienen datos personales explícitos ni números de cuenta.</strong> La aplicación <strong>no utiliza</strong> el framework App Tracking Transparency (ATT) ni el Identificador para Anunciantes (IDFA), dado que no realiza publicidad dirigida ni rastreo cruzado.</p>
+  <p>Puede revocar el consentimiento en cualquier momento desde la configuración de su dispositivo iPhone: <em>Configuración &gt; Notificaciones &gt; Mirá Qué Lindo</em>. La revocación no afecta la validez de los tratamientos realizados con anterioridad.</p>
+
+  <h2 class="section-title">10. Menores de Edad</h2>
+  <p>MQL está destinada exclusivamente a personas mayores de 18 años con capacidad legal para contraer obligaciones en la República Argentina. No recolectamos intencionalmente datos personales de menores de edad. Si detectamos que hemos recopilado información de un menor, procederemos a eliminarla de inmediato.</p>
+
+  <h2 class="section-title">11. Modificaciones a esta Política</h2>
+  <p>Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Cuando realicemos cambios materiales, lo notificaremos mediante notificación push y/o email, con al menos 10 días de anticipación. El uso continuado de la aplicación tras esa fecha implica la aceptación de la política actualizada.</p>
+
+  <h2 class="section-title">12. Contacto y Datos del Responsable</h2>
+  <div class="contact-card">
+    <p><strong>Empresa:</strong> Nazarena Edith Ferrari</p>
+    <p><strong>CUIT:</strong> 27-36779617-6</p>
+    <p><strong>Domicilio:</strong> Saenz Peña 419, Brandsen, Buenos Aires</p>
+    <p><strong>Email:</strong> <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a></p>
+    <p><strong>Fecha de vigencia:</strong> 17 de junio de 2026</p>
+  </div>
+
+</section>
+
+<footer class="site-footer">
+  <p>Mirá Qué Lindo &nbsp;|&nbsp; <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a> &nbsp;|&nbsp; Brandsen, Buenos Aires &nbsp;|&nbsp; iOS / App Store</p>
+</footer>
+
+</body>
+</html>

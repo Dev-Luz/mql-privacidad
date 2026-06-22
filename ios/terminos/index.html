@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y Condiciones — Mirá Qué Lindo (iOS)</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #fce7f3;
+      --brand-dark: #831843;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --danger: #dc2626;
+      --radius: 8px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .site-header {
+      background: var(--brand);
+      color: var(--brand-dark);
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+    .site-header h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 6px; }
+    .site-header p { font-size: 0.875rem; opacity: 0.85; }
+    .platform-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      color: var(--brand-dark);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-top: 10px;
+      border: 1px solid #f9a8d4;
+    }
+
+    .nav-tabs {
+      display: flex;
+      border-bottom: 2px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-tab {
+      flex: 1;
+      padding: 14px 12px;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .nav-tab.active { color: var(--brand-dark); border-bottom-color: var(--brand-dark); }
+    .nav-tab:hover:not(.active) { color: var(--text); }
+
+    .doc-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+
+    .doc-meta {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .doc-meta span { display: block; margin-bottom: 2px; }
+
+    .notice {
+      background: #FEF3C7;
+      border-left: 4px solid #F59E0B;
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin-bottom: 28px;
+      font-size: 0.875rem;
+      color: #92400E;
+    }
+    .notice strong { display: block; margin-bottom: 6px; }
+    .notice ul { padding-left: 18px; }
+    .notice li { margin-bottom: 4px; }
+
+    h2.section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin: 36px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand);
+    }
+    h2.section-title:first-of-type { margin-top: 0; }
+    h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 8px; }
+    p { margin-bottom: 14px; }
+    ul, ol { padding-left: 22px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; }
+    strong { font-weight: 600; }
+    em { font-style: italic; color: var(--muted); }
+    a { color: #9d174d; text-decoration: underline; }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .contact-card p { margin-bottom: 6px; font-size: 0.9rem; }
+    .contact-card p:last-child { margin-bottom: 0; }
+
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 20px 24px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .site-footer a { color: var(--brand-dark); }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Mirá Qué Lindo (MQL)</h1>
+  <p>Plataforma de Gestión de Créditos Personales</p>
+  <span class="platform-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+    iOS / App Store
+  </span>
+</header>
+
+<nav class="nav-tabs">
+  <a class="nav-tab active" href="/ios/terminos">Términos y Condiciones</a>
+  <a class="nav-tab" href="/ios/privacidad">Política de Privacidad</a>
+</nav>
+
+<section class="doc-section">
+
+  <div class="doc-meta">
+    <span><strong>Versión:</strong> 1.1</span>
+    <span><strong>Fecha de vigencia:</strong> 17 de junio de 2026</span>
+    <span><strong>Plataforma:</strong> iOS / App Store (iPhone)</span>
+  </div>
+
+  <div class="notice">
+    <strong>⚠ Información relevante</strong>
+    <ul>
+      <li>Tu deuda no se cancela si eliminás la app.</li>
+      <li>Los pagos pueden demorar hasta 72 horas hábiles en acreditarse.</li>
+      <li>Todos los datos están protegidos por la Ley N.° 25.326 de Protección de Datos Personales.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title">Artículo 1 — Aceptación de los Términos</h2>
+  <p>Los presentes Términos y Condiciones (en adelante "los Términos") regulan el acceso y uso de la aplicación móvil "Mirá Qué Lindo" (MQL), desarrollada y operada por <strong>Nazarena Edith Ferrari</strong>, CUIT 27-36779617-6, con domicilio legal en Saenz Peña 419, Brandsen, Buenos Aires (en adelante "la Empresa").</p>
+  <p>Al descargar, instalar o utilizar la aplicación, el usuario declara haber leído, comprendido y aceptado íntegramente estos Términos y la Política de Privacidad de MQL, los cuales forman parte integral del contrato de crédito celebrado entre las partes.</p>
+  <p>Si no está de acuerdo con alguna de las disposiciones aquí establecidas, deberá abstenerse de utilizar la aplicación.</p>
+
+  <h2 class="section-title">Artículo 2 — Descripción del Servicio</h2>
+  <p>MQL es una plataforma de gestión de créditos personales que facilita la administración, seguimiento y pago de créditos e instalaciones otorgados por la Empresa a sus clientes. A través de la aplicación, los usuarios pueden:</p>
+  <ul>
+    <li>Consultar el estado de su crédito y el historial de pagos</li>
+    <li>Visualizar el detalle de cuotas (monto, vencimiento, estado)</li>
+    <li>Realizar el pago de cuotas a través de MercadoPago</li>
+    <li>Recibir notificaciones sobre vencimientos y confirmaciones de pago</li>
+    <li>Actualizar datos de contacto y comunicarse con la Empresa</li>
+  </ul>
+  <p>La Empresa se reserva el derecho de ampliar, modificar o discontinuar funcionalidades de la aplicación en cualquier momento, con o sin previo aviso.</p>
+
+  <h2 class="section-title">Artículo 3 — Tipos de Usuarios y Acceso</h2>
+  <h3>3.1. Clientes (deudores)</h3>
+  <p>Son las personas físicas que han suscripto un contrato de crédito con la Empresa. El acceso a la aplicación se realiza mediante el DNI y una contraseña personal. Solo podrán visualizar y gestionar la información correspondiente a su propio crédito.</p>
+  <h3>3.2. Administradores</h3>
+  <p>Son los empleados o representantes autorizados de la Empresa, quienes acceden mediante correo electrónico institucional y contraseña. Sus acciones quedan registradas en el sistema a efectos de auditoría.</p>
+  <h3>3.3. Requisitos de acceso</h3>
+  <ul>
+    <li>Ser mayor de 18 años con capacidad legal para contratar</li>
+    <li>Tener un crédito activo otorgado por la Empresa (para clientes)</li>
+    <li>Proporcionar información veraz y mantenerla actualizada</li>
+    <li>Disponer de un dispositivo iPhone compatible con la versión vigente de la app (iOS)</li>
+  </ul>
+
+  <h2 class="section-title">Artículo 4 — Obligaciones del Usuario</h2>
+  <p>Al utilizar MQL, el usuario se compromete a:</p>
+  <ul>
+    <li>Proporcionar información veraz, completa y actualizada al momento del registro</li>
+    <li>Mantener la confidencialidad de sus credenciales de acceso (DNI/email y contraseña)</li>
+    <li>No compartir su cuenta ni sus credenciales con terceros</li>
+    <li>Notificar de inmediato a la Empresa ante cualquier uso no autorizado de su cuenta</li>
+    <li>Utilizar la aplicación exclusivamente para los fines previstos en estos Términos</li>
+    <li>No intentar acceder a información de otros usuarios o a áreas restringidas del sistema</li>
+    <li>No realizar acciones que puedan comprometer la seguridad o integridad de la plataforma</li>
+    <li>Denunciar un domicilio electrónico a fin de tener todas las notificaciones como válidas</li>
+  </ul>
+  <p>El usuario es el único responsable por el uso que haga de sus credenciales.</p>
+
+  <h2 class="section-title">Artículo 5 — Proceso de Pagos y Uso de MercadoPago</h2>
+  <h3>5.1. Procesamiento de pagos</h3>
+  <p>Los pagos de cuotas realizados a través de MQL son procesados por MercadoPago (Mercado Libre S.R.L.), una plataforma de pagos electrónicos independiente. Al realizar un pago, el usuario acepta los términos y condiciones de MercadoPago, disponibles en <a href="https://www.mercadopago.com.ar" target="_blank" rel="noopener">www.mercadopago.com.ar</a>. <strong>Apple Inc. no participa en la ejecución de estos pagos y no asume responsabilidad alguna sobre las transacciones.</strong></p>
+  <h3>5.2. Acreditación de pagos</h3>
+  <p>Los pagos se acreditarán una vez que MercadoPago confirme la transacción, lo cual puede demorar hasta 72 horas hábiles. La Empresa no es responsable por demoras atribuibles a MercadoPago o a las entidades financieras intervinientes.</p>
+  <h3>5.3. Comprobantes de pago</h3>
+  <p>MercadoPago emitirá un comprobante electrónico por cada transacción exitosa. Se recomienda conservar los comprobantes emitidos.</p>
+  <h3>5.4. Reembolsos y errores</h3>
+  <p>En caso de cobros duplicados, errores en el monto o contracargos, el usuario deberá contactar a <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a> dentro de los 10 días hábiles de detectado el error. Los reembolsos son gestionados exclusivamente a través de MercadoPago. <strong>Apple Inc. no tiene ninguna responsabilidad en la devolución de fondos derivados de las operaciones crediticias realizadas mediante esta aplicación.</strong></p>
+
+  <h2 class="section-title">Artículo 6 — Mora, Punitorios y Consecuencias del Incumplimiento</h2>
+  <h3>6.1. Mora automática</h3>
+  <p>El incumplimiento en el pago de cualquier cuota a su fecha de vencimiento producirá la mora del deudor de pleno derecho, sin necesidad de interpelación judicial ni extrajudicial previa.</p>
+  <h3>6.2. Intereses por mora y punitorios</h3>
+  <p>A partir del primer día de mora, se devengarán los intereses y/o punitorios establecidos en el contrato de crédito individual. Estos cargos se acumularán diariamente hasta la cancelación total de la deuda.</p>
+  <h3>6.3. Consecuencias del incumplimiento</h3>
+  <ul>
+    <li>Suspensión temporal del acceso a ciertas funcionalidades de la aplicación</li>
+    <li>Inicio de gestiones de cobranza extrajudicial</li>
+    <li>Reporte de la deuda ante sistemas de información crediticia conforme a la legislación vigente</li>
+    <li>Inicio de acciones judiciales de cobro con los gastos y honorarios a cargo del deudor</li>
+    <li>Declaración de caducidad de plazos y exigibilidad anticipada del saldo total de la deuda</li>
+  </ul>
+  <h3>6.4. Planes de regularización</h3>
+  <p>La Empresa podrá, a su exclusivo criterio, ofrecer planes de pago o refinanciamiento. Dichos acuerdos deberán ser formalizados por escrito.</p>
+
+  <h2 class="section-title">Artículo 7 — Suspensión y Baja de Cuenta</h2>
+  <h3>7.1. Suspensión por la Empresa</h3>
+  <p>La Empresa podrá suspender o dar de baja una cuenta por: incumplimiento de los Términos, uso fraudulento, proporción de información falsa, falta de pago reiterada, o por orden judicial.</p>
+  <h3>7.2. Baja a solicitud del usuario</h3>
+  <p>El usuario podrá solicitar la baja enviando una solicitud a <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a>. La baja no extingue las obligaciones crediticias pendientes.</p>
+  <h3>7.3. Efectos de la suspensión o baja</h3>
+  <p>La suspensión o baja no libera al usuario de las deudas pendientes ni afecta las acciones que la Empresa pudiera iniciar para el cobro de los créditos vigentes.</p>
+
+  <h2 class="section-title">Artículo 8 — Limitación de Responsabilidad</h2>
+  <p>La Empresa no será responsable por:</p>
+  <ul>
+    <li>Interrupciones, fallas técnicas o indisponibilidad temporal por causas ajenas a su control</li>
+    <li>Errores o demoras en la acreditación de pagos atribuibles a MercadoPago o entidades financieras</li>
+    <li>Daños derivados del uso indebido de las credenciales de acceso</li>
+    <li>Pérdida de datos causada por actos del propio usuario, fallas del dispositivo o desinstalación de la app</li>
+    <li>Decisiones económicas o financieras tomadas por el usuario en base a la información provista</li>
+  </ul>
+  <p>En ningún caso la responsabilidad total de la Empresa frente al usuario superará el monto de las cuotas efectivamente abonadas en los 3 meses anteriores al evento que originó el reclamo. MQL es un canal de gestión y no es el proveedor del servicio de internet o de hardware.</p>
+
+  <h2 class="section-title">Artículo 9 — Propiedad Intelectual</h2>
+  <p>Todos los elementos de la aplicación MQL, incluyendo su código fuente, diseño, logotipos, textos, funcionalidades e interfaces, son propiedad exclusiva de la Empresa o de sus licenciantes y están protegidos por las leyes de propiedad intelectual de la República Argentina. El usuario no adquiere ningún derecho de propiedad intelectual por el uso de la aplicación.</p>
+  <p>En caso de que un tercero demande que la posesión o el uso de la aplicación infringe sus derechos de propiedad intelectual, la Empresa, y no Apple Inc., se encargará en exclusiva de la investigación, defensa, acuerdo y resolución de dicha demanda.</p>
+
+  <h2 class="section-title">Artículo 10 — Modificaciones a los Términos</h2>
+  <p>La Empresa se reserva el derecho de modificar estos Términos en cualquier momento. Los cambios serán comunicados con al menos 10 días de anticipación. La continuación en el uso de la aplicación tras esa fecha implicará la aceptación de los nuevos Términos.</p>
+
+  <h2 class="section-title">Artículo 11 — Ley Aplicable y Jurisdicción</h2>
+  <p>Los presentes Términos se rigen por la ley de la República Argentina, en particular el Código Civil y Comercial de la Nación, la Ley 24.240 de Defensa del Consumidor y la Ley 25.326 de Protección de Datos Personales.</p>
+  <p>Para la resolución de cualquier controversia, las partes se someten a la jurisdicción de los Tribunales Ordinarios de la ciudad de La Plata, Buenos Aires, con expresa renuncia a cualquier otro fuero.</p>
+
+  <h2 class="section-title">Artículo 12 — Acuerdo de Licencia de Usuario Final (EULA) — Requisitos Apple App Store</h2>
+  <p>El presente artículo incorpora los requisitos mínimos exigidos por Apple Inc. en el Anexo B (Exhibit B) del Contrato de Licencia del Programa de Desarrolladores de Apple. <strong>Su aceptación es condición necesaria para el uso de la aplicación en dispositivos iPhone.</strong></p>
+
+  <h3>12.1. Reconocimiento de partes</h3>
+  <p>El presente Acuerdo de Licencia de Usuario Final (EULA) se celebra únicamente entre Nazarena Edith Ferrari (la Empresa) y el usuario final. Apple Inc. no es parte de este contrato y no posee responsabilidad alguna sobre el software, su contenido ni su operación.</p>
+
+  <h3>12.2. Alcance de la licencia</h3>
+  <p>Se otorga al usuario una licencia limitada, revocable y no transferible para utilizar la aplicación en cualquier dispositivo de la marca Apple que sea de su propiedad o esté bajo su control legítimo, conforme a las Reglas de Uso establecidas en los Términos del Servicio de App Store.</p>
+
+  <h3>12.3. Mantenimiento y soporte técnico</h3>
+  <p>La Empresa es la única responsable de proveer servicios de mantenimiento y soporte técnico para la aplicación. El usuario reconoce que Apple Inc. no tiene obligación alguna de brindar dichos servicios.</p>
+
+  <h3>12.4. Garantía limitada</h3>
+  <p>La aplicación se proporciona "tal cual" (as-is). En caso de falla en el cumplimiento de cualquier garantía legal aplicable, el usuario podrá notificar a Apple para tramitar un reembolso del precio de la aplicación (si correspondiese), quedando Apple eximida de cualquier otra obligación de garantía.</p>
+
+  <h3>12.5. Reclamaciones de producto</h3>
+  <p>El usuario reconoce que la Empresa, y no Apple Inc., es la responsable de abordar cualquier reclamación vinculada con el uso de la aplicación, incluyendo: (i) demandas por responsabilidad de producto; (ii) incumplimientos de leyes de privacidad o protección al consumidor; y (iii) demandas derivadas del uso de la aplicación conforme a las leyes de protección del consumidor de la República Argentina.</p>
+
+  <h3>12.6. Propiedad intelectual de terceros</h3>
+  <p>En caso de que un tercero demande que la posesión o el uso de la aplicación infringe sus derechos de propiedad intelectual, la Empresa, y no Apple Inc., se encargará en exclusiva de la investigación, defensa, acuerdo y resolución de dicha demanda.</p>
+
+  <h3>12.7. Cumplimiento legal — sanciones internacionales</h3>
+  <p>El usuario declara y garantiza que: (i) no reside en ningún país sujeto a embargo por parte del Gobierno de los Estados Unidos de América ni catalogado como colaborador del terrorismo; y (ii) no figura en ninguna lista de partes prohibidas o restringidas por el Gobierno de los Estados Unidos.</p>
+
+  <h3>12.8. Contratos de terceros</h3>
+  <p>El usuario se compromete a cumplir simultáneamente con las condiciones contractuales de terceros aplicables al utilizar esta aplicación, incluyendo los Términos y Condiciones de MercadoPago (<a href="https://www.mercadopago.com.ar" target="_blank" rel="noopener">www.mercadopago.com.ar</a>) y las condiciones de su proveedor de datos móviles.</p>
+
+  <h3>12.9. Apple como tercero beneficiario</h3>
+  <p>El usuario acepta expresamente que Apple Inc. y sus subsidiarias son terceros beneficiarios del presente EULA. Al aceptar estos Términos, Apple tendrá el derecho —y se considerará que ha aceptado dicho derecho— de exigir el cumplimiento del presente contrato directamente frente al usuario.</p>
+
+  <h2 class="section-title">Artículo 13 — Disposiciones Generales</h2>
+  <ul>
+    <li>Si alguna disposición fuera declarada inválida, las restantes mantendrán su plena vigencia.</li>
+    <li>La tolerancia ante incumplimientos no implicará renuncia a derechos ni creará precedente.</li>
+    <li>Estos Términos constituyen el acuerdo completo entre las partes respecto al uso de la aplicación.</li>
+    <li>En caso de discrepancia entre estos Términos y el contrato de crédito individual suscripto, prevalecerán las disposiciones del contrato de crédito.</li>
+  </ul>
+
+  <h2 class="section-title">Artículo 14 — Contacto</h2>
+  <div class="contact-card">
+    <p><strong>Empresa:</strong> Nazarena Edith Ferrari</p>
+    <p><strong>CUIT:</strong> 27-36779617-6</p>
+    <p><strong>Domicilio:</strong> Saenz Peña 419, Brandsen, Buenos Aires</p>
+    <p><strong>Email:</strong> <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a></p>
+    <p><strong>Fecha de vigencia:</strong> 17 de junio de 2026</p>
+  </div>
+
+</section>
+
+<footer class="site-footer">
+  <p>Mirá Qué Lindo &nbsp;|&nbsp; <a href="mailto:consultas@miraquelindocred.com.ar">consultas@miraquelindocred.com.ar</a> &nbsp;|&nbsp; Brandsen, Buenos Aires &nbsp;|&nbsp; iOS / App Store</p>
+</footer>
+
+</body>
+</html>
